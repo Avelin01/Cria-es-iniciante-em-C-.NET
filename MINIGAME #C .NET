@@ -1,0 +1,44 @@
+{
+    // Minigame de adivinhação
+
+    Console.WriteLine("Desafiante começa!");
+    Console.Write("Informe um numero de 0 a 9:");
+    int N1 = int.Parse(Console.ReadLine());
+
+    Console.Clear();
+
+    if(N1 <= 9)
+    {
+        Console.WriteLine("Desafiado é sua vez!");
+        Console.Write("Informe um numero de 0 a 9:");
+    
+    }
+    else
+    {
+        Console.WriteLine("Apenas são validos numeros de 0 a 9!");
+        Console.WriteLine("Tente novamente!");
+        Console.WriteLine("Desafiante começa!");
+        Console.Write("Informe um numero de 0 a 9:");
+        N1 = int.Parse(Console.ReadLine());
+        Console.Clear();
+        Console.WriteLine("Desafiado é sua vez!");
+        Console.Write("Informe um numero de 0 a 9:");
+    }
+
+        int N2 = int.Parse(Console.ReadLine());
+
+
+
+    while(N1 != N2)
+    {
+        Console.WriteLine("Errado!");
+        Console.Write("Tente novamente:");
+        N2 = int.Parse(Console.ReadLine());
+    }
+    
+    
+        Console.WriteLine("Você acertou!");
+    
+
+
+}
